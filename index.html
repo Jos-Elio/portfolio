@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jos Schön – Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body>
+        <!-- Navigation -->
+        <nav id="navbar" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+         <main>
+            <!-- Sections -->
+            <section id="hero">
+                <h1>Jos Schön</h1>
+                <p>Frontend + Web Developer with a diploma in Graphic Design</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <div class="projects-grid">
+                    <!-- PROJECT 1: Visual Atmosphere Generator -->
+                    <article class="project-card">
+                        <div class="project-media" data-index="0">
+                            <img
+                                src="assets/photos/JosElioAngel_Atmosphere_Screenshot_0.png"
+                                alt="Screenshot of Visual Atmosphere Generator web application"
+                                class="project-image"
+                            >
+                            <span class="image-counter">1 / 5</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Visual Atmosphere Generator</h3>
+                            <p>
+                                Interactive visual tool for generating real-time visual atmospheres.
+                                Designed and implemented as a user-adjustable system for live visuals and performance contexts.
+                            </p>
+                            <p>
+                                Audiovisual artist website of Jos Elio Angel.
+                            </p>
+                            <p>
+                                Final Project for "CS50 – Introduction to Computer Science" at HarvardX.
+                            </p>
+                            <p class="project-tech">
+                                HTML • CSS • JavaScript (Vanilla)
+                            </p>
+                            <div class="project-links">
+                                <a href="https://jos-elio.github.io/visual-atmosphere/index.html" target="_blank" >Live</a>
+                                <a href="https://github.com/Jos-Elio/visual-atmosphere" target="_blank" >GitHub</a>
+                                <a href="https://www.youtube.com/watch?v=Cw4CGb1ATpI&feature=youtu.be">Video Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: TODO -->
+                    <article class="project-card">
+                        <img
+                            src="assets/photos/Visuals_Controller.png"
+                            alt="Pink and blue waves"
+                            class="project-image"
+                        >
+                        <div class="project-content">
+                            <h3>IN DEVELOPMENT: Live Visuals Controller Software</h3>
+                            <p>
+                                A desktop app to adjust site-specific filters on visuals for live projections for performances and theater.
+                            </p>
+                            <p class="project-tech">
+                                MORE TBA
+                            </p>
+                            <div class="project-links">
+                                <!-- LINKS MISSING -->
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About</h2>
+                <h3>Frontend + Web Development x Graphic Design</h3>
+                <p>
+                    After graduating from the Academy of Fine Arts (Hochschule für Grafik und Buchkunst) in Leipzig, Germany with a diploma in Graphic Design, I transitioned into Software Development. I completed „CS50 – Introduction to Computer Science“ from HarvardX and currently I’m focusing on Frontend and Web Development.
+                </p>
+                <p>
+                    My interests lie in making Web applications accessible and user-friendly through a clear UI and understandable UX.
+                </p>
+                <h3>Skills</h3>
+                <ul class="skills">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>Python & Flask, SQL (Sqlite3), C</li>
+                    <li>Git, Github, VS Code</li>
+                    <li>Typography, Photo/Video/Sound Editing, Illustration</li>
+                </ul>
+
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>If you'd like to get in touch, feel free to reach out via <a href="mailto:j_schoen@posteo.de">mail</a>.</p>
+                <p>
+                    Find me on <a href="https://github.com/Jos-Elio">GitHub</a> and <a href="#">LinkedIn</a>
+                </p>
+            </section>
+        </main>
+
+        <script src="js/app.js"></script>
+    </body>
+</html>

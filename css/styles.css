@@ -1,0 +1,153 @@
+body {
+    font-family: "Google Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1, h2 {
+    line-height: 0.5;
+}
+
+p {
+    max-width: 65ch;
+    margin-bottom: 1em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #ff5500;
+}
+
+/* NAVIGATION BAR */
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+:root {
+    --navbar-height: 80px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 24px;
+    min-height: 90vh;
+    scroll-margin-top: var(--navbar-height);
+
+}
+
+#hero {
+    padding-left: 24px;
+}
+
+/* PROJECTS SECTION */
+#projects {
+    padding: 24px 24px;
+    scroll-margin-top: calc(var(--navbar-height) + 24px);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 48px;
+}
+
+.project-card {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 24px;
+    padding: 0 24px 8vh;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f7f7f7;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card img {
+    padding-top: 24px;
+    width: 100%;
+    display: block;
+}
+
+.project-content {
+    padding: 24px;
+    max-width: 500px;
+}
+
+.project-tech {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.project-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+
+.project-media:hover {
+    cursor: pointer;
+}
+
+/* ABOUT SECTION */
+#about {
+    padding-left: 24px;
+}
+
+.skills li {
+    margin-left: -40px;
+    list-style: none;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* CONTACT SECTION */
+#contact {
+    padding-left: 24px;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+    section {
+        justify-content: flex-start;
+        padding-top: 2em;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding-bottom: 12vh;
+    }
+}
