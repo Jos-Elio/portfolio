@@ -26,19 +26,52 @@
             <!-- Sections -->
             <section id="hero">
                 <h1>Jos Schön</h1>
-                <p>Frontend + Web Developer with a diploma in Graphic Design</p>
+                <p>Junior Frontend Developer & Graphic Designer with a focus on accessible design</p>
             </section>
 
             <section id="projects">
                 <h2>Projects</h2>
 
                 <div class="projects-grid">
-                    <!-- PROJECT 1: Visual Atmosphere Generator -->
+                    <!-- PROJECT: Color Accessibility Checker -->
                     <article class="project-card">
-                        <div class="project-media" data-index="0">
+                        <div class="project-media" data-index="0"
+                            data-images='["assets/photos/accessibility-checker_Screenshot_0.png","assets/photos/accessibility-checker_Screenshot_1.png","assets/photos/accessibility-checker_Screenshot_2.png","assets/photos/accessibility-checker_Screenshot_3.png", "assets/photos/accessibility-checker_Screenshot_4.png", "assets/photos/accessibility-checker_Screenshot_5.png"]'
+                            data-alts='["Screenshot of contrast checker with dark colors","Screenshot of CVD simulation","Screenshot of contrast checker with light colors","Screenshot of CVD simulation with light colors", "Screenshot of mobile view", "Screenshot of mobile view with CVD simulation"]'>
+                            <img
+                                src="assets/photos/accessibility-checker_Screenshot_0.png"
+                                alt="Screenshot of Color Accessibility Checker web application"
+                                class="project-image"
+                            >
+                            <span class="image-counter">1 / 6</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Color Accessibility Checker</h3>
+                            <p>
+                                A WCAG contrast checker and Color Vision Deficiency (Color Blindness) simulation tool.
+                                Built to make accessible design easier for designers and developers.
+                            </p>
+                            <p>
+                                Built as part of my interest in accessible and inclusive design, and as a tool for myself and other designers to use in their work.
+                            </p>
+                            <p class="project-tech">
+                                React • Vite • TailwindCSS
+                            </p>
+                            <div class="project-links">
+                                <a href="https://accessibility-checker-chi.vercel.app/" target="_blank" >Live</a>
+                                <a href="https://github.com/Jos-Elio/accessibility-checker" target="_blank" >GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT: Visual Atmosphere Generator -->
+                    <article class="project-card">
+                        <div class="project-media" data-index="0"
+                            data-images='["assets/photos/JosElioAngel_Atmosphere_Screenshot_0.png","assets/photos/JosElioAngel_Atmosphere_Screenshot_1.png","assets/photos/JosElioAngel_Atmosphere_Screenshot_2.png","assets/photos/JosElioAngel_Atmosphere_Screenshot_3.png","assets/photos/JosElioAngel_Atmosphere_Screenshot_4.png"]'
+                            data-alts='["Screenshot of visual atmosphere generator startpage with blue visuals","Screenshot of info modal with instructions","Screenshot of filter control sliders","Screenshot of red visuals","Screenshot of fullscreen view of orange visuals with white dots"]'>
                             <img
                                 src="assets/photos/JosElioAngel_Atmosphere_Screenshot_0.png"
-                                alt="Screenshot of Visual Atmosphere Generator web application"
+                                alt="Screenshot of visual atmosphere generator startpage with blue visuals"
                                 class="project-image"
                             >
                             <span class="image-counter">1 / 5</span>
@@ -48,8 +81,6 @@
                             <p>
                                 Interactive visual tool for generating real-time visual atmospheres.
                                 Designed and implemented as a user-adjustable system for live visuals and performance contexts.
-                            </p>
-                            <p>
                                 Audiovisual artist website of Jos Elio Angel.
                             </p>
                             <p>
@@ -91,28 +122,35 @@
 
             <section id="about">
                 <h2>About</h2>
-                <h3>Frontend + Web Development x Graphic Design</h3>
-                <p>
-                    After graduating from the Academy of Fine Arts (Hochschule für Grafik und Buchkunst) in Leipzig, Germany with a diploma in Graphic Design, I transitioned into Software Development. I completed „CS50 – Introduction to Computer Science“ from HarvardX and currently I’m focusing on Frontend and Web Development.
-                </p>
-                <p>
-                    My interests lie in making Web applications accessible and user-friendly through a clear UI and understandable UX.
-                </p>
                 <h3>Skills</h3>
                 <ul class="skills">
                     <li>HTML, CSS, JavaScript</li>
+                    <li>React, Vite, Tailwind CSS</li>
                     <li>Python & Flask, SQL (Sqlite3), C</li>
-                    <li>Git, Github, VS Code</li>
+                    <li>Web Accessibility & WCAG 2.1</li>
+                    <li>Git, GitHub, VS Code</li>
                     <li>Typography, Photo/Video/Sound Editing, Illustration</li>
                 </ul>
 
+                <h3>Frontend + Web Development x Graphic Design</h3>
+                <p>
+                    After graduating from the Academy of Fine Arts (Hochschule für Grafik und Buchkunst) 
+                    in Leipzig, Germany with a diploma in Graphic Design, I transitioned into Software 
+                    Development. I completed "CS50 – Introduction to Computer Science" from HarvardX 
+                    and have since been building projects with React, Vite, and Tailwind CSS.
+                </p>
+                <p>
+                    I'm particularly interested in web accessibility and inclusive design — making 
+                    digital experiences that work for everyone. My background in graphic design informs how 
+                    I think about UI and UX: clarity, hierarchy, and usability first.
+                </p>
             </section>
 
             <section id="contact">
                 <h2>Contact</h2>
-                <p>If you'd like to get in touch, feel free to reach out via <a href="mailto:j_schoen@posteo.de">mail</a>.</p>
+                <p>If you'd like to get in touch, send me a <a href="mailto:j_schoen@posteo.de">mail</a>.</p>
                 <p>
-                    Find me on <a href="https://github.com/Jos-Elio">GitHub</a> and <a href="https://www.linkedin.com/in/jos-schoen/">LinkedIn</a>
+                    Find me and my projects on <a href="https://github.com/Jos-Elio">GitHub</a> and <a href="https://www.linkedin.com/in/jos-schoen/">LinkedIn.</a>
                 </p>
             </section>
         </main>
